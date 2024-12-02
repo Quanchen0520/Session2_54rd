@@ -1,6 +1,8 @@
 package com.example.session2_54rd
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -17,6 +19,11 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        val Map_Btn = findViewById<ImageView>(R.id.Map_Btn)
+        Map_Btn.setOnClickListener {
+            val intent = Intent(this,MapActivity::class.java)
+            startActivity(intent)
         }
 //        val WeatherTitle: TextView? = null
 //        var City:android.widget.TextView? = null
