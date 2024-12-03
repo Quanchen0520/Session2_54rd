@@ -343,15 +343,15 @@
             android:id="@+id/TenDayWeatherTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/baseline_calendar_today_24"
             android:text="10天內天氣預報" />
 
         <View
             android:id="@+id/view"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_margin="5dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:background="@color/grey" />
@@ -527,6 +527,7 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/outline_data_exploration_24"
         android:text="空氣指標"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
         app:layout_constraintStart_toStartOf="@+id/linearLayout4"
